@@ -3,14 +3,9 @@ import streamlit as st
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-st.write("Files in root:", os.listdir(BASE_DIR))
 
 model_path = os.path.join(BASE_DIR, "model")
 
-if os.path.exists(model_path):
-    st.write("Files in model folder:", os.listdir(model_path))
-else:
-    st.write(" model folder NOT FOUND")
 import streamlit as st
 import joblib
 import re
