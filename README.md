@@ -11,7 +11,7 @@ This project classifies customer support tickets into categories and assigns pri
 - Streamlit
 
 ## link
-https://futureml02-enryqzbtsicp37p6ds7bhr.streamlit.app/
+https://futureml02-hhomafq5gxwrybd2yvlpqf.streamlit.app/
 
 ##  Example
 Input: Payment failed  
