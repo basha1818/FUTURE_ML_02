@@ -5,10 +5,13 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-# Load models
-model_cat = joblib.load("model/category_model.pkl")
-model_pri = joblib.load("model/priority_model.pkl")
-vectorizer = joblib.load("model/vectorizer.pkl")
+import os
+
+base_path = os.path.dirname(__file__)
+
+model_cat = joblib.load(os.path.join(base_path, "model/category_model.pkl"))
+model_pri = joblib.load(os.path.join(base_path, "model/priority_model.pkl"))
+vectorizer = joblib.load(os.path.join(base_path, "model/vectorizer.pkl"))
 
 stop_words = set(stopwords.words('english'))
 
