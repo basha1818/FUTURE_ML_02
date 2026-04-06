@@ -10,8 +10,8 @@ This project classifies customer support tickets into categories and assigns pri
 - Flask
 - Streamlit
 
-##  Run
-streamlit run streamlit_app.py
+## link
+https://futureml02-enryqzbtsicp37p6ds7bhr.streamlit.app/
 
 ##  Example
 Input: Payment failed  
