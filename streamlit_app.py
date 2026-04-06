@@ -7,11 +7,12 @@ from nltk.tokenize import word_tokenize
 
 import os
 import joblib
-BASE_DIR = os.path.dirname(__file__)
 
-model_cat = joblib.load(os.path.join(BASE_DIR, "model/category_model.pkl"))
-model_pri = joblib.load(os.path.join(BASE_DIR, "model/priority_model.pkl"))
-vectorizer = joblib.load(os.path.join(BASE_DIR, "model/vectorizer.pkl"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_cat = joblib.load(os.path.join(BASE_DIR, "model", "category_model.pkl"))
+model_pri = joblib.load(os.path.join(BASE_DIR, "model", "priority_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "model", "vectorizer.pkl"))
 
 stop_words = set(stopwords.words('english'))
 
